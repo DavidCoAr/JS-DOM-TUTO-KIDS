@@ -76,7 +76,7 @@ boton.addEventListener("click", agregarTarea);
 
 //ADDEVENTLISTENER de agregar tarea al pulsar ENTER EN TECLADO
 boton.addEventListener("keydown", (event) => {
-    //Si no pongo este condicional, con cualquier tecla se dispararía la F(x)
+    //Si no pongo este condicional (key es la tecla que se pulsa), con cualquier tecla se dispararía la F(x)
     if (event.key === "Enter") {
         agregarTarea()
     }
