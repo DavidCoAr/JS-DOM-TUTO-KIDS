@@ -1,0 +1,59 @@
+/* ESTILOS GENERALES */
+
+/*  Selector universa:todos elementos web */
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: Verdana, sans-serif; */
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    height: 100vh;
+    background-color: #2B807B;
+    text-align: center;
+}
+
+/* Selector por clase */
+.centrar-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Selector por ID */
+#contenedor {
+    height: 220px;
+    width: 450px;
+    background-color: aliceblue;
+    border: 5px solid black;
+    flex-direction: column;
+    flex-wrap: wrap; /* Elementos se distribuyan en varias lineas si los necesitan*/
+}
+
+/* TEXTO */
+
+#color {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* BOTON */
+
+button {
+    font-size: 25px;
+    color: aliceblue;
+    border-radius: 20px;
+    background-color: #008CBA;
+    padding: 10px 30px; /* 10px top/bottom 30px left/right */
+    margin: 15px;
+
+    cursor: pointer; /* El iconco se convierte en una mano */
+    user-select: none; /* No se puede seleccionar el texto dentro del contenedor */
+    transition-duration: 0.4s;/* Para el botón */
+}
+
+button:hover {
+    background-color: yellow;
+    color: black;
+}

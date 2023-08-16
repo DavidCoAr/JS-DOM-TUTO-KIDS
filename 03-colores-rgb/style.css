@@ -1,0 +1,54 @@
+/* ESTILOS GENERALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(23, 41, 56);
+}
+
+/* CONTENEDORES */
+
+.contenedor-principal {
+    width: 50vw;
+    max-width: 600px;
+    min-height: 350px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    border: 3px solid lightgrey;
+    border-radius: 10px;
+}
+
+/* Color R , G , B */
+
+.color {
+    padding: 20px;
+    margin: 10px; 
+
+    font-size: 1.5em;
+    font-weight: bold;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    border: 1px solid lightgrey;
+}
+
+label, p {
+    margin: 20px;
+}

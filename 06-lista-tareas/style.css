@@ -1,0 +1,140 @@
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    /* el tamaño total del elemento se calcula sumando el ancho del contenido real y el relleno, pero el borde y el margen exterior se incluyen dentro del ancho especificado. */
+    box-sizing: border-box; /* no tendrás que preocuparte tanto por cómo los bordes y el relleno afectarán el diseño general. */
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+   
+    /* background: url(imagenes/fondo.png) no-repeat center center/cover; */
+    /* centrada horizontal y verticalmente: background url (imagenes/plano.jpg) no-repeat center center/cover */
+    background-image: url(imagenes/fondo.png);
+    background-repeat: no-repeat;
+    background-position: center center; /* centrada horizontal y verticalmente */
+    background-size: cover; /* cubra el area del navegador, manteniendo relación de aspecto */
+    
+    border: 5px solid white;
+}
+
+/* CONTENEDOR */
+
+.contenedor{
+    width: 700px;
+    min-height: 500px;
+    background-color: white;
+    padding: 40px;
+
+    border: 5px solid black;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* TITULO */
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* INPUT */
+#ingresar-tarea{
+    width: 80%;
+    height: 50px;
+
+    font-size: 15px;
+
+    margin: 20px;
+    padding: 5px;
+
+    border: 4px solid dimgray;
+    border-radius: 5px;
+}
+
+/* BOTON */
+
+button {
+    width: 150px;
+    height: 60px;
+    padding: 10px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Aparece icono de mano al pasar por encima */
+    user-select: none;  /* No se puede copiar el texto */
+
+}
+
+/* LISTA TAREAS */
+
+#lista-de-tareas {
+    width: 80%;
+    margin-top: 20px;
+    border: 4px solid green;
+
+}
+
+.tarea{
+    width: 100%;
+    min-height: 70px;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    background-color: lightslategray;
+
+    border: 2px solid black;
+    border-radius: 5px;
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* Si la tarea está completada */
+.tarea.completada {
+    text-decoration: line-through;
+    background-color: black;
+    border: none;
+}
+
+.tarea p {
+    max-width: 350px;
+}
+
+/* Iconos bootstrap para realizado y borrar tarea */
+
+i {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.icono-completar {
+    color: greenyellow;
+}
+
+.icono-eliminar {
+    color: white;
+}
+
+.icono-completar:hover,
+.icono-eliminar:hover {
+    background-color: rgb(255, 255, 255, 0.5);
+}

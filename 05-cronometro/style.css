@@ -1,0 +1,77 @@
+/* ESTILOS GENERALES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* Para que inciuya margin/padding en los anchos y altos que damos como valores que serán fijos,  */
+}
+
+body {
+    /*  100% del alto de la ventana gráfica( "vh:viewport height) */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    text-align: center;
+    border: 5px solid black;
+    /* centrada horizontal y verticalmente: background url (imagenes/plano.jpg) no-repeat center center/cover */
+    background-image: url(imagenes/plano.jpg);
+    background-repeat: no-repeat;
+    background-position: center center; /* centrada horizontal y verticalmente */
+    background-size: cover; /* cubra el area del navegador, manteniendo relación de aspecto */
+}
+
+.contenedor-principal {
+    width: 80vw;
+    max-width: 600px;
+    min-height: 350px;
+    border: 5px solid black;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+
+.contenedor-botones {
+    padding: 20px;
+    border: 5px solid black;
+}
+
+#cronometro {
+    font-size: 40px;
+    width: 100%;
+    border: 5px solid brown;
+    user-select: none;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.boton {
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+
+    margin: 10px;
+    padding: 10px;
+    /* Aparezca un mano al pasar por encima */
+    cursor: pointer;
+}
+/* Aplico estilo al boton de inicio/pausa con clase iniciar Y al icono dentro de él */
+#boton-inicio-pausa.iniciar,
+#boton-inicio-pausa.iniciar i {
+    background-color: greenyellow;
+}
+
+/* Aplico estilo al boton de inicio/pausa con clase pausar (creada por JS) Y al icono dentro de él */
+#boton-inicio-pausa.pausar,
+#boton-inicio-pausa.pausar i {
+    background-color: yellow;
+}
+
+#boton-reiniciar {
+    background-color: red;
+}

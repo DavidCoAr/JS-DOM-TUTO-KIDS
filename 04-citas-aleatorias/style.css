@@ -1,0 +1,85 @@
+/*  ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid red;
+
+    /*Equivalente en 1 línea: background: url(imagenes/biblioteca.jpg) no-repeat center center/cover;*/
+    background-image: url(imagenes/biblioteca.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center center; /* centrada horizontal y verticalmente */
+    background-size: cover; /* cubra el area del navegador, manteniendo relación de aspecto */
+}
+
+.contenido-centrado{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid plum;
+}
+
+/* CONTENEDORES */
+
+.contenedor {
+    width: 80vw;
+    max-width: 600px;
+    min-height: 500px;
+
+    padding: 20px;
+    background-color: aliceblue;
+    border: 5px solid black;
+    border-radius: 15px;
+}
+
+.contenedor-interno {
+    width: 80%;
+    border: 3px solid red;
+}
+
+/* CONTENIDO */
+
+#titulo {
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+}
+
+#cita {
+    font-size: 15px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+
+#autor {
+    font-size: 10px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#boton-cambiar-cita {
+    width: 180px;
+    height: 50px;
+    font-size: 10px;
+}

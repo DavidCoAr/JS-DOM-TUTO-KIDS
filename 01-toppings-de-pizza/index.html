@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis toppings</title>
+    <!-- Linkear el favicon -->
+    <link rel="icon" type="image/png" href="imagenes/favicon.png" >
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="contenedor">
+        <h1 id="titulo">🍕<br>Toppings de pizza</h1>
+        <ul id="lista-toppings">
+            <li class="topping fondo-marron" id="aceitunas">Aceitunas</li>
+            <li class="topping fondo-naranja">Cebolla</li>
+            <li onclick="mostrarClickPorConsola()" class="topping fondo-marron" id="albahaca">Albahaca</li>
+            <li onclick="mostrarClickPorConsolaConParam('Has hecho click donde champiñones')" class="topping fondo-naranja">Champiñones</li>
+        </ul>
+        <a href="https://www.freecodecamp.org/espanol/">FreeCodeCamp</a>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
